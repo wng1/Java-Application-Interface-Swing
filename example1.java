@@ -11,3 +11,10 @@ long count = allOrders.stream()
                       return order.isFrom("New York");
                       })
                       .count();
+
+//Finding details about the order
+//in the Orders.java, the following getOrders() will be found like this:
+    public Stream<Order> getOrder() 
+    {
+        return orders.stream();
+    }
