@@ -14,5 +14,11 @@ long count = allOrders.stream()
 
 //Finding details about the order
 //in the Orders.java, the following getOrders() will be found like this:
-public Stream<Order> getOrder() 
-{ return orders.stream(); }
+public Stream<Order> getOrders() 
+{ return order.stream(); }
+
+
+Set<String> ord = order.getOrders()
+                       .filter(customer -> customer.getFirstName()
+                       .map(customer -> customer.getFirstName())
+                       .collect(toSet());
