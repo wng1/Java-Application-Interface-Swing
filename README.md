@@ -2,4 +2,4 @@
 
 Sample example for user interace (Swing) 
 
-CPD
+Java EE 8 Lambda  (CPD) 
