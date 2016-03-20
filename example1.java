@@ -5,3 +5,9 @@ button.addActionListener(event -> System.out.println("You have submitted your fo
 long count = allOrders.stream()
                       .filter(order -> order.isFrom("New York"))
                       .count();
+//print out the iteration
+long count = allOrders.stream()
+                      .filter(order -> {System.out.println(order.getOrders());
+                      return order.isFrom("New York");
+                      })
+                      .count();
