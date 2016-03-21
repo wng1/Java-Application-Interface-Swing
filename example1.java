@@ -22,3 +22,17 @@ Set<String> ord = order.getOrders()
                        .filter(customer -> customer.getFirstName()
                        .map(customer -> customer.getFirstName())
                        .collect(toSet());
+
+//Refactoring code to meet new modern systems
+
+public Set<String> findOrdersAboveTen(List<Order> orders)
+{
+  return orders.stream
+  .flatMap(order -> order.getOrderQuantity())
+  .filter(order -> order.getQuantity() > 5)
+  .map(order -> order.getOrder())
+  .collect(toSet());
+  
+}
+}
+}
